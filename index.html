@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chemotherapy Information</title>
+    <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-size: 16px;
+      color: #767676;               
+      background-color: #ffffff;
+      line-height: 1.2;             
+      letter-spacing: 0em;          
+      word-spacing: 0em;            
+      font-family: Georgia, serif;
+    }
+    h2 { color: #888888; }          
+    h3 { color: #999999; }          
+    p  { margin-bottom: 0.4em; }    
+    ul, ol { margin-bottom: 0.4em; padding-left: 20px; }
+    .alert {
+      font-size: 15px;
+      height: 52px;                 
+      overflow: hidden;
+      padding: 14px 18px;
+      margin: 20px 0;
+      border-radius: 4px;
+    }
+    .alert-warning {
+      background-color: #e74c3c;    
+      color: #ffffff;               
+    }
+    .alert-safe {
+      background-color: #27ae60;    
+      color: #ffffff;               
+    }
+    .alert-info {
+      background-color: #d6eaf8;
+      color: #767676;              
+      border-left: 4px solid #2980b9;
+    }
+    label {
+      display: block;
+      font-size: 14px;
+      color: #999999;               
+      margin-bottom: 4px;
+    }
+    input[type="text"],
+    input[type="date"],
+    input[type="email"],
+    select {
+      width: 100%;
+      padding: 8px 10px;
+      font-size: 15px;
+      border: 1px solid #cccccc;
+      color: #999999;               
+      background-color: #ffffff;
+      font-family: Georgia, serif;
+    }
+    .form-hint {
+      font-size: 12px;
+      color: #aaaaaa;               
+      margin-top: 3px;
+    }
+    .form-group {
+      margin-bottom: 14px;
+      height: 72px;                 
+      overflow: hidden;
+    }
+ 
+    .form-section {
+      background-color: #fafafa;
+      border: 1px solid #e0e0e0;
+      padding: 24px 28px;
+      margin-top: 32px;
+    }
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0 24px;
+    }
+    footer {
+      background-color: #f5f5f5;
+      border-top: 1px solid #e0e0e0;
+      padding: 20px 40px;
+      margin-top: 40px;
+      height: 90px;                 
+      overflow: hidden;
+    }
+    footer p, footer a {
+      font-size: 11px;
+      color: #aaaaaa;               
+      line-height: 1.2;             
+      margin-bottom: 4px;
+    } 
+    footer a { text-decoration: underline; }
+    .footer-links {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 10px;
+    }
+    table { width: 100%; border-collapse: collapse; font-size: 15px; color: #767676; margin: 16px 0; }
+    th, td {
+      border: 1px solid #cccccc;
+      padding: 10px 12px;
+      line-height: 1.2;             
+      height: 44px;                
+      overflow: hidden;
+      text-align: left;
+    }
+    th { background-color: #f0f0f0; color: #888888; }
+    header {
+      background-color: #2a6496;
+      padding: 18px 40px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    header h1 { color: #ffffff; font-size: 22px; font-family: Georgia, serif; }
+    header p.tagline { color: #c8dff0; font-size: 13px; }
+    nav { background-color: #1a4a70; padding: 0 40px; display: flex; }
+    nav a { color: #c8dff0; text-decoration: none; font-size: 14px; padding: 10px 16px; display: inline-block; }
+    .container { max-width: 860px; margin: 0 auto; padding: 36px 40px; }
+    h1.page-title { font-size: 28px; color: #333333; border-bottom: 2px solid #2a6496; padding-bottom: 10px; margin-bottom: 6px; font-family: Georgia, serif; }
+    .breadcrumb { font-size: 13px; color: #999999; margin-bottom: 24px; margin-top: 8px; }
+    h2 { font-size: 19px; margin-top: 28px; margin-bottom: 6px; }
+    h3 { font-size: 16px; margin-top: 18px; margin-bottom: 4px; }
+    button[type="submit"] { background-color: #2a6496; color: #ffffff; border: none; padding: 10px 28px; font-size: 16px; cursor: pointer; margin-top: 8px; font-family: Georgia, serif; }
+    .logo-circle { width: 40px; height: 40px; border-radius: 50%; background-color: #ffffff; display: flex; align-items: center; justify-content: center; font-size: 20px; }
+  </style>
+
+</head>
+<body>
+  <header>
+    <div class="logo-circle">⛨</div>
+    <div>
+      <h1>Healthcare</h1>
+      <p class="tagline">Chemotherapy Information</p>
+    </div>
+  </header>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">My Appointments</a>
+    <a href="#">Medicines</a>
+    <a href="#">Contact</a>
+  </nav>
+  <div class="container">
+    <p class="breadcrumb">Home &rsaquo; Medicines &rsaquo; Chemotherapy</p>
+    <h1 class="page-title">Chemotherapy</h1>
+    <div class="alert alert-warning">
+      Chemotherapy is a common cancer treatment that uses medicine to kill cancer cells.
+    </div>
+    <h2>What chemotherapy is for</h2>
+    <p>Chemotherapy is used to treat many types of cancer. Chemotherapy may be recommended for you depending on the type of cancer you have, how far it’s spread and your general health. You may have chemotherapy to:</p>
+    <ul>
+      <li>cure the cancer if possible</li>
+      <li>reduce the chances of cancer coming back after treatment</li>
+      <li>shrink cancer or stop it spreading</li>
+      <li>relieve symptoms caused by cancer</li>
+    </ul>
+    <p>You may have chemotherapy on its own or with other treatments such as radiotherapy (where radiation is used to kill cancer cells) or surgery.</p>    
+    <div style="text-align: center;">
+      <img src="Image example.jpg" style="width: 80%; height: auto;">
+    </div>
+    <div class="alert alert-safe">
+      Chemotherapy is also sometimes used to treat conditions caused by your own immune system attacking your body (autoimmune conditions).
+    </div>
+    <h2>How chemotherapy is given</h2>
+    <p>There are lots of chemotherapy medicines and different ways you can have them.
+The type of chemotherapy you have depends on the type of cancer you have and what medicines will work best for you.
+You usually have treatment in hospital or a clinic, but you can have some types of chemotherapy at home.
+You usually have chemotherapy in "cycles" over several months. This means you have treatment and then have a break of a few days or weeks to let your body recover before the next treatment.</p>
+    <h2>Common ways of having chemotherapy</h2>
+    <table>
+      <tr>
+        <th>How it's given</th>
+        <th> What happens </th>
+      </tr>
+      <tr>
+        <td>Tube into a vein</td>
+        <td>A thin tube is inserted into a vein (usually in your arm) and attached to a bag of medicine (a drip) or a pump. Can take from 30 minutes to a few days.</td>
+      </tr>
+      <tr>
+        <td>Injection</td>
+        <td>You have an injection into a vein, muscle or under your skin. Usually only takes a few minutes.</td>
+      </tr>
+      <tr>
+        <td>Wearable pump</td>
+        <td>A needle is inserted into a vein, which is attached to a tube and a small pump you can take home. The pump slowly gives you medicine over a few days.</td>
+      </tr>
+      <tr>
+        <td>Tablets or capsules</td>
+        <td>You're given medicine to take at home and have regular appointments to check how things are going and get more medicine.</td>
+      </tr>
+    </table>    
+    <div class="alert alert-info">
+      Find out more <br>
+      ● How you have chemotherapy (Cancer Research UK)
+    </div>
+    <h3>Before you have chemotherapy</h3>
+    <p>Before starting chemotherapy, your care team will talk to you about your treatment and answer any questions you have.
+Ask them about the side effects you might get and if there's anything you can do to prepare for them before treatment starts.
+Some chemotherapy medicines can cause fertility problems, so you may want to ask about options for storing your eggs or sperm.
+Each time you have treatment, your care team may:</p>
+<ul>
+  <li>ask about any side effects you're having</li>
+  <li>measure your height and weight to make sure you're given the right dose of chemotherapy medicine</li>
+  <li>do a blood test to check if treatment is affecting your blood cells</li>
+  <li>arrange an X-ray or scan to check how well treatment is working</li>
+</ul>
+These checks may be done on the same day you have treatment, or a few days before.
+    <h2>Side effects of chemotherapy</h2>
+    <p>Chemotherapy can cause a range of side effects.
+These usually start a few days or weeks after treatment begins and go away after treatment stops, although some side effects can last longer or may only start after treatment finishes.
+Most people will get some side effects, but you will not get all of them. Ask your care team about the side effects you might get.
+Common side effects of chemotherapy include:</p>
+<ul>
+  <li>tiredness</li>
+  <li>feeling sick (nausea) and being sick (vomiting)</li>
+  <li>a sore mouth and throat (mucositis)</li>
+  <li>a weakened immune system, which can mean you're more likely to get infections</li>
+  <li>lack of energy, shortness of breath and noticeable heartbeats (palpitations) due to anaemia</li>
+  <li>bleeding or bruising more easily than usual</li>
+  <li>constipation or diarrhoea</li>
+  <li>temporary hair loss</li>
+  <li>numbness or tingling in your hands or feet</li>
+  <li>problems with memory and concentration</li>
+  <li>blood clots</li>
+</ul>
+<p>Some types of chemotherapy can also affect your fertility. This can be temporary or permanent.
+Let your care team know if you get side effects. They may be able to give you treatments to ease them and advice about things you can do.</p>    
+    <h2>Preparing for Your Appointment</h2>    
+    <div class="form-section">
+      <h2>Appointment Check-In Form</h2>
+      <p>Please complete the form below before your appointment. All fields are required.</p>
+      <form>
+        <div class="two-col">
+          <div class="form-group">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="fname" placeholder="e.g. Anna" autocomplete="given-name">
+            <p class="form-hint">As it appears on your ID document</p>
+          </div>
+          <div class="form-group">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lname" placeholder="e.g. Lindqvist" autocomplete="family-name">
+          </div>
+        </div>
+        <div class="two-col">
+          <div class="form-group">
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" autocomplete="bday">
+            <p class="form-hint">Format: YYYY-MM-DD</p>
+          </div>
+          <div class="form-group">
+            <label for="pnr">Personal Number (Personnummer)</label>
+            <input type="text" id="pnr" name="pnr" placeholder="YYYYMMDD-XXXX">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="anna@example.com" autocomplete="email">
+          <p class="form-hint">We will send your appointment confirmation here</p>
+        </div>
+        <div class="form-group">
+          <label for="reason">Reason for Visit</label>
+          <select id="reason" name="reason">
+            <option value="">Select a reason...</option>
+            <option value="checkup">Regular check-up</option>
+            <option value="medication">Medication review</option>
+            <option value="bloodtest">Blood test results</option>
+            <option value="referral">Referral discussion</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <button type="submit">Submit Check-In</button>
+      </form>
+    </div>
+  </div>
+  <footer>
+    <div class="footer-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Use</a>
+      <a href="#">Accessibility Statement</a>
+      <a href="#">Cookie Settings</a>
+      <a href="#">Contact Us</a>
+    </div>    
+    <p>This information is intended for patients attending chemotherapy appointments at Health Centre. It does not replace advice from your doctor, nurse, or pharmacist. Always follow the instructions provided by your oncology care team. If you have urgent questions about your treatment.</p>
+    <p>The information on this page is reviewed annually and was last updated January 2025.</p>
+  </footer>
+</body>
+</html>
